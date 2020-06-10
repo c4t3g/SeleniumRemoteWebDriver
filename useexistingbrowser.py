@@ -9,7 +9,7 @@ class SessionRemote(webdriver.Remote):
 
 class WebDriver(object):
     """selenium web driver constructor
-    :param name: Name of file to write session id and url
+    :
     """
     def __init__(self, name=None):
         self.name = name
@@ -63,7 +63,7 @@ class WebDriver(object):
         self.driver.session_id = self.session_id
 
         try:
-            self.market_driver.page_source
+            self.driver.page_source
             return True
         except Exception as e:
             options = webdriver.FirefoxOptions()
